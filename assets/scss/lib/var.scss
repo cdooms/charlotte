@@ -18,6 +18,7 @@ $green: #82CA9C;
 $blue: #21B8C6;
 $darkgrey: #575757;
 $lightgrey: #929292;
+$margin: 60px;
 
 // typo
 $rembase: 16;
@@ -45,10 +46,12 @@ $legacy-support-for-ie6: false !global;
 $legacy-support-for-ie7: true !global;
 $legacy-support-for-ie8: true !global;
 
+$gutter-width: 20px;
+
 // susy
 $susy: (
   columns: 12,
-  gutters: 1/4,
+  gutter-width: 1/4,
   math: fluid,
   output: float,
 

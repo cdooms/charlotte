@@ -5,15 +5,13 @@
   background-color: #FFF;
   text-align: center;
   padding: 44px;
-  margin: 0;
+  margin: 10px;
 
   p { 
     color: $lightgrey;
     text-align: center;
     font-size: 13px;
   }
-
-
 
   span {
     color: $darkgrey;
@@ -39,6 +37,13 @@ h5 {
   text-align: center;
   padding: 44px;
   border-radius: 7px;
+
+  h5 {
+    text-transform: uppercase;
+    color: $darkgrey;
+    font-style: regular;
+    padding: 20px;
+  }
 }
 
 .getstarted {
@@ -46,7 +51,6 @@ h5 {
   text-align: center;
   padding: 44px;
   border-radius: 7px;
-
 
   p { 
     color: $lightgrey;
@@ -90,7 +94,6 @@ h5 {
   margin-bottom: 50px;
   width: 100%;
   background-color: #FFF;
-  float: left;
 }
 
 .box-red {

@@ -24,7 +24,7 @@ dl {
 }
 
 body {
-  background-color: $white;
+  background-color: #EAEDF1;
 }
 
 table,
@@ -42,4 +42,29 @@ table {
     padding: 10px 20px;
   }
 }
+
+
+
+
+body,
+html {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  @include container;
+  
+  .col {
+    @include span(4 of 12);
+  }
+
+  .right {
+    @include last; 
+  }
+}
+
 

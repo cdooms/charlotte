@@ -1,6 +1,169 @@
 // ====================================================================================================== //
 // MODULES //
 // ====================================================================================================== //
+.uploadstats {
+  background-color: #FFF;
+  text-align: center;
+  padding: 44px;
+  margin: 0;
+
+  p { 
+    color: $lightgrey;
+    text-align: center;
+    font-size: 13px;
+  }
+
+
+
+  span {
+    color: $darkgrey;
+    text-align: center;
+    font-weight: regular;
+    font-size: 24px;
+  }
+
+  .img-box {
+    margin-bottom: 15px;
+  }
+
+}
+
+h5 {
+  text-transform: uppercase;
+  color: $darkgrey;
+  font-style: regular;
+}
+
+.social {
+  background-color: #FFF;
+  text-align: center;
+  padding: 44px;
+  border-radius: 7px;
+}
+
+.getstarted {
+  background-color: #FFF;
+  text-align: center;
+  padding: 44px;
+  border-radius: 7px;
+
+
+  p { 
+    color: $lightgrey;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  h5 {
+    text-transform: uppercase;
+    color: $darkgrey;
+    font-style: regular;
+  }
+
+  span {
+    color: $darkgrey;
+    text-align: center;
+    font-weight: regular;
+    font-size: 24px;
+  }
+
+  .img-box {
+    margin-bottom: 15px;
+  }
+
+  button {
+    background-color: $red;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 70px;
+    margin-top: 20px;
+  }
+
+}
+
+.contain {
+  padding: 0;
+  border-radius: 7px;
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: #FFF;
+  float: left;
+}
+
+.box-red {
+  background-color: $red;
+  float: left;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 18px;
+  width: 33%;
+  text-align: center;
+  padding: 15px 0;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  span {
+    font-style: bold;
+    font-size: 23px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.box-blue {
+  background-color: $blue;
+  float: left;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 18px;
+  width: 33%;
+  text-align: center;
+  padding: 15px 0;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  span {
+    font-style: bold;
+    font-size: 23px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.box-green {
+  background-color: $green;
+  float: left;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 18px;
+  width: 34%;
+  text-align: center;
+  padding: 15px 0;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  span {
+    font-style: bold;
+    font-size: 23px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+  }
+}
 
 // ====================================================================================================== //
 // OVERRIDES //

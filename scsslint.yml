@@ -53,7 +53,7 @@ linters:
     enabled: true
 
   IdSelector:
-    enabled: true
+    enabled: false
 
   ImportPath:
     enabled: true

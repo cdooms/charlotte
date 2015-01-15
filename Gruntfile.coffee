@@ -112,12 +112,11 @@ module.exports = (grunt) ->
         tasks: ["jshint", "uglify:own"]
       scss:
         files: ["<%= settings.base %><%= settings.theme %>assets/scss/**/*.scss"]
-        tasks: ["compass:app", "scsslint"]
+        tasks: ["compass:app"]
 
   # DEFAULT TASK.
   grunt.registerTask "default", [
     "compass:app"
-    "scsslint"
     "jshint"
     "uglify:own"
   ]

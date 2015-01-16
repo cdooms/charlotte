@@ -418,7 +418,9 @@ html {
   background-color: #FFF;
   text-align: center;
   padding: 44px;
-  margin: 10px;
+  margin-top: 50px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 .uploadstats p {
   color: #929292;
@@ -444,14 +446,39 @@ h5 {
 .social {
   background-color: #FFF;
   text-align: center;
-  padding: 44px;
+  padding: 25px;
   border-radius: 7px;
+  margin-bottom: 50px;
 }
 .social h5 {
   text-transform: uppercase;
   color: #575757;
   font-style: regular;
-  padding: 20px;
+}
+.social ul {
+  height: 47px;
+  text-align: center;
+  margin: 0 auto;
+}
+.social li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin: 7px;
+}
+.social .sprite-fb {
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/layout/sprite-fb.png");
+  background-image: no repeat;
+  background-position: 0 0;
+}
+.social .sprite-fb a:active, .social .sprite-fb a:hover {
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/layout/sprite-fb.png");
+  background-image: no repeat;
+  background-position: -33px 0;
 }
 
 .getstarted {
@@ -459,6 +486,7 @@ h5 {
   text-align: center;
   padding: 44px;
   border-radius: 7px;
+  margin-bottom: 50px;
 }
 .getstarted p {
   color: #929292;
@@ -492,10 +520,8 @@ h5 {
 
 .contain {
   padding: 0;
-  border-radius: 7px;
   margin-bottom: 50px;
   width: 100%;
-  background-color: #FFF;
 }
 
 .box-red {
@@ -507,6 +533,7 @@ h5 {
   width: 33%;
   text-align: center;
   padding: 15px 0;
+  border-bottom-left-radius: 7px;
 }
 .box-red p {
   padding: 0;
@@ -551,6 +578,7 @@ h5 {
   width: 34%;
   text-align: center;
   padding: 15px 0;
+  border-bottom-right-radius: 7px;
 }
 .box-green p {
   padding: 0;
@@ -562,6 +590,108 @@ h5 {
   line-height: 27px;
   padding: 0;
   margin: 0;
+}
+
+.video {
+  background-color: #FFF;
+  border-radius: 7px;
+  height: 100px;
+  margin: 50px 0;
+}
+
+.form {
+  background-color: #FFF;
+  border-radius: 7px;
+  margin: 50px 0;
+  padding: 44px;
+}
+
+.hugh {
+  background-color: #FFF;
+  text-align: left;
+  padding: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  vertical-align: middle;
+}
+.hugh p {
+  color: #929292;
+  text-align: left;
+  font-size: 13px;
+  margin: 0;
+}
+.hugh h5 {
+  text-transform: uppercase;
+  color: #575757;
+  font-style: regular;
+  text-align: left;
+  margin: 0;
+}
+.hugh .float {
+  float: left;
+  margin-right: 15px;
+}
+.hugh .test {
+  vertical-align: middle;
+  height: 52px;
+}
+
+.box-red1 {
+  background-color: #DD5555;
+  float: left;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  width: 33%;
+  padding: 15px 0;
+  border-bottom-left-radius: 7px;
+}
+.box-red1 p {
+  padding: 0;
+  margin: 0;
+}
+.box-red1 .float {
+  float: left;
+}
+
+.box-blue1 {
+  background-color: #21B8C6;
+  float: left;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  width: 33%;
+  padding: 15px 0;
+}
+.box-blue1 p {
+  padding: 0;
+  margin: 0;
+}
+.box-blue1 .float {
+  float: left;
+  margin: 0 10px 0 10px;
+}
+
+.box-green1 {
+  background-color: #82CA9C;
+  float: left;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  width: 34%;
+  padding: 15px 0;
+  border-bottom-right-radius: 7px;
+}
+.box-green1 p {
+  padding: 0;
+  margin: 0;
+}
+.box-green1 .float {
+  float: left;
+  margin: 0 10px 0 10px;
 }
 
 .w1 {

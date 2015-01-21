@@ -415,10 +415,8 @@ html {
   float: left;
   margin-left: 41.66667%;
   margin-right: -100%;
-  margin-top: -300px;
-  margin-bottom: -300px;
-  padding-top: 300px;
-  padding-bottom: 300px;
+  float: right;
+  margin-right: 0;
 }
 #main .midright .up-left {
   width: 42.85714%;

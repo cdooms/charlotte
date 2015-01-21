@@ -50,10 +50,11 @@ $gutter-width: 20px;
 
 // susy
 $susy: (
-  columns: 12,
-  gutter-width: 1/4,
+  columns: 72,
   math: fluid,
-  output: float,
+  output: isolate,
+  column-width: 15px,
+  gutters: 0,
 
   debug: (
     image: show,

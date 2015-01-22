@@ -63,7 +63,6 @@ html {
     @include span(42 at 31 of 72);
     @include last;
 
-
     .up-left {
       @include span(18 at 1 of 42);
     }

@@ -1,6 +1,214 @@
 // ====================================================================================================== //
 // MODULES //
 // ====================================================================================================== //
+
+.contain {
+  padding: 0;
+  margin-bottom: $margin-bottom;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+// LEFT ////////////////////////
+
+.video {
+  border-radius: 7px;
+  margin-bottom: $margin-bottom;
+  margin-top: 50px;
+  max-width: 100%;
+  max-height: 264px;
+  position: relative;
+  overflow: hidden;
+
+  .controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: rgba(#000, .7);
+    vertical-align: middle;
+    text-align: center;
+    @include box-sizing(border-box);
+
+    a {
+      height: 30px;
+      padding: 8px 0;
+    }
+
+    .play {
+      line-height: 25px;
+      padding: 5px;
+    }
+
+    .bar {
+      line-height: 25px;
+      padding: 8px 5px;
+      max-width: 295px;
+    }
+
+    .sound {
+      line-height: 25px;
+      padding: 5px;
+    }
+  }
+
+}
+
+.form {
+  background-color: #FFF;
+  border-radius: 7px;
+  margin-bottom: $margin-bottom;
+  margin-top: 50px;
+  padding: 44px;
+  color: $lightgrey;
+  text-align: left;
+
+  h5 {
+    text-transform: uppercase;
+    color: $darkgrey;
+    font-style: regular;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 9px 0;
+  }
+
+  input {
+    border: 1px solid #e6e6e6;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 9px;
+    line-height: 17px;
+    font-size: 13px;
+    color: $lightgrey;
+    width: 100%;
+    @include box-sizing(border-box);
+  }
+
+  textarea {
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #c5c5c5;
+    width: 100%;
+    @include box-sizing(border-box);
+    resize: none;
+    max-height: 110px;
+  }
+
+  button {
+    clear: both;
+    background-color: $red;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    @include box-sizing(border-box);
+  }
+
+}
+
+.hugh {
+  background-color: #FFF;
+  text-align: left;
+  padding: 25px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  vertical-align: middle;
+
+  p { 
+    color: $lightgrey;
+    text-align: left;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  h5 {
+    text-transform: uppercase;
+    color: $darkgrey;
+    font-style: regular;
+    text-align: left;
+    margin: 0;
+  }
+
+  .float {
+    float: left;
+    margin-right: 15px;
+  }
+
+  .test {
+    vertical-align: middle;
+    height: 52px;
+    display: table-cell;
+  }
+}
+
+.frame { 
+  margin: 0 25px;
+  text-align: center;
+
+  p {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 34px;
+  }
+
+  .float {
+    float: left;
+    margin: 0;
+  }
+}
+
+.box-red1 {
+  background-color: $red;
+  float: left;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  width: 33%;
+  padding: 15px 0;
+  border-bottom-left-radius: 7px;
+
+}
+
+.box-blue1 {
+  background-color: $blue;
+  float: left;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  width: 33%;
+  padding: 15px 0;
+
+
+}
+
+.box-green1 {
+  background-color: $green;
+  float: left;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  width: 34%;
+  padding: 15px 0;
+  border-bottom-right-radius: 7px;
+}
+
+
+// MIDRIGHT TOP ////////////////////////
+
 .uploadstats {
   background-color: #FFF;
   text-align: center;
@@ -38,7 +246,7 @@ h5 {
   text-align: center;
   padding: 20px;
   border-radius: 7px;
-  margin-bottom: 50px;
+  margin-bottom: $margin-bottom;
 
   h5 {
     text-transform: uppercase;
@@ -135,38 +343,49 @@ h5 {
   }  
 }
 
-
-.getstarted {
+.signin {
   background-color: #FFF;
-  text-align: center;
-  padding: 44px;
   border-radius: 7px;
-  margin: 50px 0;
-
-  p { 
-    color: $lightgrey;
-    text-align: center;
-    font-size: 13px;
-  }
+  margin-bottom: $margin-bottom;
+  margin-top: 50px;
+  padding: 44px;
+  color: $lightgrey;
+  text-align: center;
 
   h5 {
     text-transform: uppercase;
     color: $darkgrey;
     font-style: regular;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 17px 0;
   }
 
-  span {
-    color: $darkgrey;
-    text-align: center;
-    font-weight: regular;
-    font-size: 24px;
+  input {
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+    color: $lightgrey;
+    width: 100%;
+    @include box-sizing(border-box);
   }
 
-  .img-box {
-    margin-bottom: 15px;
+  .username {
+    background: url(../img/layout/username.png) 0 0 no-repeat;
+    text-indent: 33px;
+    vertical-align: middle;
   }
+
+  .password {
+    background: url(../img/layout/password.png) 0 0 no-repeat;
+    text-indent: 33px;
+    vertical-align: middle;
+  }  
 
   button {
+    clear: both;
     background-color: $red;
     color: #FFF;
     text-transform: uppercase;
@@ -175,18 +394,82 @@ h5 {
     border: none;
     border-radius: 4px;
     padding: 12px;
-    margin-top: 20px;
     width: 100%;
+    @include box-sizing(border-box);
+    margin-bottom: 30px;
+  }
+
+  a {
+    font-size: 13px;
+    color: $lightgrey;
+  }
+}
+
+.city {
+  max-width: 100%;
+  max-height: 161px;
+
+  .pin {
+    float: left;
+    position: absolute;
+    margin: 125px 15px 0px 125px;
+    z-index: 3;
+    max-height: 24px;
+    width: 110px;
+
+    img {
+      float: left;
+      margin-right: 7px;
+    }
+
+    p {
+      text-transform: uppercase;
+      color: #FFF;
+      font-size: 15px;
+      margin: 0;
+      padding: 5px 0 0 0;
+      line-height: 24px;
+    }
+  }
+
+  .below {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .above {
+    float: left;
+    position: absolute;
+    margin: 105px 15px 0px 15px;
+    z-index: 2;
   }
 
 }
 
-.contain {
-  padding: 0;
-  margin-bottom: 50px;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 7px;
+.location {
+  background-color: #FFF;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 15px 15px 15px 125px;
+
+  span {
+    text-transform: uppercase;
+    color: $darkgrey;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    text-transform: uppercase;
+    color: $lightgrey;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .box-red {
@@ -264,200 +547,39 @@ h5 {
 
 }
 
-.video {
-  border-radius: 7px;
-  margin: 50px 0;
-  max-width: 100%;
-  max-height: 250px;
-  position: relative;
-  overflow: hidden;
+// MIDRIGHT BOTTOM ////////////////////////
 
-  .controls {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: rgba(#000, .7);
-  }
-}
-
-.form {
+.getstarted {
   background-color: #FFF;
-  border-radius: 7px;
-  margin: 50px 0;
+  text-align: center;
   padding: 44px;
-  color: $lightgrey;
-  text-align: left;
-
-  h5 {
-    text-transform: uppercase;
-    color: $darkgrey;
-    font-style: regular;
-    text-align: left;
-    margin: 0;
-    padding: 0 0 8px 0;
-  }
-
-  input {
-    border: 1px solid #e6e6e6;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 13px;
-    color: $lightgrey;
-    width: 100%;
-    @include box-sizing(border-box);
-  }
-
-  textarea {
-    border: 1px solid #e6e6e6;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 13px;
-    color: #c5c5c5;
-    width: 100%;
-    @include box-sizing(border-box);
-    resize: none;
-    max-height: 100px;
-  }
-
-  button {
-    clear: both;
-    background-color: $red;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 13px;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    padding: 12px;
-    width: 100%;
-    @include box-sizing(border-box);
-  }
-
-}
-
-.hugh {
-  background-color: #FFF;
-  text-align: left;
-  padding: 30px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  vertical-align: middle;
+  border-radius: 7px;
+  margin-bottom: $margin-bottom;
 
   p { 
     color: $lightgrey;
-    text-align: left;
+    text-align: center;
     font-size: 13px;
-    margin: 0;
   }
 
   h5 {
     text-transform: uppercase;
     color: $darkgrey;
     font-style: regular;
-    text-align: left;
-    margin: 0;
   }
 
-  .float {
-    float: left;
-    margin-right: 15px;
-  }
-
-  .test {
-    vertical-align: middle;
-    height: 52px;
-    display: table-cell;
-  }
-}
-
-.frame { 
-  margin: 0 25px;
-  text-align: center;
-
-  p {
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    line-height: 34px;
-  }
-
-  .float {
-    float: left;
-    margin: 0;
-  }
-}
-
-.box-red1 {
-  background-color: $red;
-  float: left;
-  color: #FFF;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 18px;
-  width: 33%;
-  padding: 15px 0;
-  border-bottom-left-radius: 7px;
-
-}
-
-.box-blue1 {
-  background-color: $blue;
-  float: left;
-  color: #FFF;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 18px;
-  width: 33%;
-  padding: 15px 0;
-
-
-}
-
-.box-green1 {
-  background-color: $green;
-  float: left;
-  color: #FFF;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 18px;
-  width: 34%;
-  padding: 15px 0;
-  border-bottom-right-radius: 7px;
-}
-
-.signin {
-  background-color: #FFF;
-  border-radius: 7px;
-  margin: 50px 0;
-  padding: 44px;
-  color: $lightgrey;
-  text-align: center;
-
-  h5 {
-    text-transform: uppercase;
+  span {
     color: $darkgrey;
-    font-style: regular;
-    text-align: left;
-    margin: 0;
-    padding: 0 0 17px 0;
+    text-align: center;
+    font-weight: regular;
+    font-size: 24px;
   }
 
-  input {
-    border: 1px solid #e6e6e6;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 13px;
-    color: $lightgrey;
-    width: 100%;
-    @include box-sizing(border-box);
+  .img-box {
+    margin-bottom: 15px;
   }
 
   button {
-    clear: both;
     background-color: $red;
     color: #FFF;
     text-transform: uppercase;
@@ -466,77 +588,15 @@ h5 {
     border: none;
     border-radius: 4px;
     padding: 12px;
+    margin-top: 20px;
     width: 100%;
-    @include box-sizing(border-box);
-    margin-bottom: 30px;
   }
-
-  a {
-    font-size: 13px;
-    color: $lightgrey;
-  }
-}
-
-.city {
-  max-width: 100%;
-  height: 161px;
-
-  p {
-    text-transform: uppercase;
-    color: #FFF;
-    font-size: 15px;
-    padding-top: 130px;
-
-  }
-
-  .below {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
-
-  .above {
-    float: left;
-    position: absolute;
-    margin: 105px 15px 0px 15px;
-    z-index: 3;
-  }
-
-}
-
-.location {
-  background-color: #FFF;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  margin-bottom: 50px;
-  padding: 15px 15px 15px 125px;
-
-  span {
-    text-transform: uppercase;
-    color: $darkgrey;
-    font-size: 20px;
-    line-height: 30px;
-    padding: 0;
-    margin: 0;
-  }
-
-  p {
-    text-transform: uppercase;
-    color: $lightgrey;
-    font-size: 13px;
-    line-height: 22px;
-    padding: 0;
-    margin: 0;
-  }
-
-
 }
 
 .temp {
   background-color: $red;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
-  margin-top: 50px;
   color: #FFF;
   text-align: center;
   padding: 10px;
@@ -568,7 +628,7 @@ h5 {
   background-color: #FFF;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  margin-bottom: 50px;
+  margin-bottom: $margin-bottom;
   color: $red;
   text-align: center;
   padding: 15px;
@@ -582,6 +642,7 @@ h5 {
     margin: 0;
   }
 }
+
 // ====================================================================================================== //
 // OVERRIDES //
 // ====================================================================================================== //

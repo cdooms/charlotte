@@ -49,12 +49,17 @@
   <div id="main">
     <div class="col left">
       <div class="video">
-        <video src="" poster="assets/img/layout/video.png"></video>
-        <div class="controls">
-          <a href=""><img src="assets/img/layout/pause.png" alt="" class="play"></a>
-          <img src="assets/img/layout/bar.png" alt="" class="bar">
-          <a href=""><img src="assets/img/layout/sound.png" alt="" class="sound"></a>
-        </div>
+        <video poster="assets/img/layout/video.png" controls>
+          <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm"> 
+          <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg"> 
+          <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+          <source src="http://techslides.com/demos/sample-videos/small.3gp" type="video/3gp">
+        </video>
+        <!--<div class="controls">
+          <button type="button" class="play-pause"></button>
+          <input type="range" class="bar" value="0">
+          <button type="button" class="sound"></button>
+        </div>-->
       </div>
 
       <div class="form">

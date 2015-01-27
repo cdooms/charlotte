@@ -20,34 +20,37 @@
   height: 264px;
   position: relative;
   overflow: hidden;
+  padding: 0;
+  background-color: #000;
 
   .controls {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
-    padding: 10px;
+    height: 10%;
+    padding: 10px 0;
     background-color: rgba(#000, .7);
     vertical-align: middle;
     text-align: center;
-    @include box-sizing(border-box);
 
     button {
-      height: 15px;
-      width: 15px;
-      padding: 0;
-      background: none;
       border: 0;
-      margin: 0 10px;
+      width: 7%;
+      text-indent: -99999px;
+      float: left;
+      margin-left: 15px;
     }
 
     .play-pause {
       background: url(../img/layout/pause.png) 0 0 no-repeat;
+
     }
 
-    .bar {
-      padding: 8px 5px;
-      width: 295px;
+    .progress {
+      cursor: pointer;
+      width: 87%;
+      height: 3px;
+      text-align: center;
     }
 
     .sound {
@@ -55,6 +58,40 @@
     }
   }
 
+}
+
+#playpause {
+  background: url(../img/layout/pause.png) 0 0 no-repeat;
+  float: left;
+  margin-left: 10px;
+}
+
+#progress {
+  width: 87%;
+  height: 3px;
+  margin-top: 10px;
+  float: left;
+  background-color: #5b5b5b;
+  border: none;
+
+  span {
+  height: 3px;
+  display:inline-block;
+  background-color:#5b5b5b;
+  }
+}
+
+.controls progress::-moz-progress-bar {
+  background-color:#0095dd;
+}
+/* Chrome requires its own rule for this, otherwise it ignores it */
+.controls progress::-webkit-progress-value {
+  background-color:#0095dd;
+}
+
+#mute {
+  background: url(../img/layout/sound.png) 0 0 no-repeat;
+  margin-right: 10px;
 }
 
 .form {

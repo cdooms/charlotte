@@ -368,7 +368,7 @@ table th {
 
 table {
   width: 100%;
-  background-color: #FFF;
+  background-color: white;
 }
 table td,
 table th {
@@ -573,7 +573,7 @@ html {
 }
 .form button {
   clear: both;
-  background-color: #DD5555;
+  background-color: #dd5555;
   color: #FFF;
   text-transform: uppercase;
   font-size: 13px;
@@ -634,7 +634,7 @@ html {
 }
 
 .box-red1 {
-  background-color: #DD5555;
+  background-color: #dd5555;
   float: left;
   color: #FFF;
   font-size: 15px;
@@ -646,7 +646,7 @@ html {
 }
 
 .box-blue1 {
-  background-color: #21B8C6;
+  background-color: #21b8c6;
   float: left;
   color: #FFF;
   font-size: 15px;
@@ -657,7 +657,7 @@ html {
 }
 
 .box-green1 {
-  background-color: #82CA9C;
+  background-color: #82ca9c;
   float: left;
   color: #FFF;
   font-size: 15px;
@@ -838,7 +838,7 @@ h5 {
 }
 .signin button {
   clear: both;
-  background-color: #DD5555;
+  background-color: #dd5555;
   color: #FFF;
   text-transform: uppercase;
   font-size: 13px;
@@ -917,7 +917,7 @@ h5 {
 }
 
 .box-red {
-  background-color: #DD5555;
+  background-color: #dd5555;
   float: left;
   color: #FFF;
   font-size: 13px;
@@ -940,7 +940,7 @@ h5 {
 }
 
 .box-blue {
-  background-color: #21B8C6;
+  background-color: #21b8c6;
   float: left;
   color: #FFF;
   font-size: 13px;
@@ -962,7 +962,7 @@ h5 {
 }
 
 .box-green {
-  background-color: #82CA9C;
+  background-color: #82ca9c;
   float: left;
   color: #FFF;
   font-size: 13px;
@@ -1012,7 +1012,7 @@ h5 {
   box-sizing: border-box;
 }
 .getstarted button {
-  background-color: #DD5555;
+  background-color: #dd5555;
   color: #FFF;
   text-transform: uppercase;
   font-size: 13px;
@@ -1025,7 +1025,7 @@ h5 {
 }
 
 .temp {
-  background-color: #DD5555;
+  background-color: #dd5555;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
   color: #FFF;
@@ -1057,7 +1057,7 @@ h5 {
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
   margin-bottom: 50px;
-  color: #DD5555;
+  color: #dd5555;
   text-align: center;
   padding: 15px;
   clear: both;
@@ -1066,7 +1066,7 @@ h5 {
   box-sizing: border-box;
 }
 .date p {
-  color: #DD5555;
+  color: #dd5555;
   font-size: 13px;
   padding: 0;
   margin: 0;

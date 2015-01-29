@@ -117,6 +117,7 @@ module.exports = (grunt) ->
   # DEFAULT TASK.
   grunt.registerTask "default", [
     "compass:app"
+    "scsslint"
     "jshint"
     "uglify:own"
   ]

@@ -37,6 +37,7 @@
     border-radius: 5px;
     padding: 4%;
     line-height: 17px;
+    font-family: "proximanovalight";
     font-size: 13px;
     color: $lightgrey;
     width: 100%;
@@ -48,6 +49,7 @@
     margin: 10px 0;
     border-radius: 5px;
     padding: 4%;
+    font-family: "proximanovalight";
     font-size: 13px;
     line-height: 17px;
     color: #C5C5C5;
@@ -75,7 +77,8 @@
   border-top-right-radius: 7px;
   vertical-align: middle;
 
-  p { 
+  p {
+    font-family: "proximanovalight";
     color: $lightgrey;
     text-align: left;
     font-size: 13px;
@@ -107,6 +110,8 @@
     margin: 0;
     vertical-align: middle;
     line-height: 34px;
+    font-family: "proximanovaregular";
+    letter-spacing: 0.04em;
   }
 
   .float {
@@ -119,6 +124,8 @@
   background-color: $red;
   float: left;
   color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
@@ -132,6 +139,8 @@
   background-color: $blue;
   float: left;
   color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
@@ -145,6 +154,8 @@
   background-color: $green;
   float: left;
   color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
@@ -168,6 +179,7 @@
     color: $lightgrey;
     text-align: center;
     font-size: 13px;
+    font-family: "proximanovalight";
   }
 
   span {
@@ -175,6 +187,8 @@
     text-align: center;
     font-weight: regular;
     font-size: 24px;
+    font-family: "proximanovaregular";
+    letter-spacing: 0.04em;
   }
 
   .title {
@@ -317,6 +331,7 @@
     color: $lightgrey;
     width: 100%;
     @include box-sizing(border-box);
+    font-family: "proximanovaregular";
   }
 
   .username {
@@ -343,6 +358,7 @@
   a {
     font-size: 13px;
     color: $lightgrey;
+    font-family: "proximanovalight";
   }
 
   a:hover, 
@@ -375,6 +391,7 @@
       margin: 0;
       padding: 5px 0 0;
       line-height: 24px;
+      font-family: "proximanovalight";
     }
   }
 
@@ -406,6 +423,8 @@
     line-height: 30px;
     padding: 0;
     margin: 0;
+    font-family: "proximanovaregular";
+    letter-spacing: 0,04em;
   }
 
   p {
@@ -415,82 +434,21 @@
     line-height: 22px;
     padding: 0;
     margin: 0;
+    font-family: "proximanovalight";
   }
 }
 
 .box-red {
-  background-color: $red;
-  float: left;
-  color: #FFF;
-  font-size: 13px;
-  line-height: 18px;
-  width: 33%;
-  text-align: center;
-  padding: 15px 0;
-  border-bottom-left-radius: 7px;
-
-  p {
-    padding: 0;
-    margin: 0;
-  }
-
-  span {
-    font-style: bold;
-    font-size: 23px;
-    line-height: 27px;
-    padding: 0;
-    margin: 0;
-  }
+  @include box($red);
 }
 
 .box-blue {
-  background-color: $blue;
-  float: left;
-  color: #FFF;
-  font-size: 13px;
-  line-height: 18px;
-  width: 33%;
-  text-align: center;
-  padding: 15px 0;
-
-  p {
-    padding: 0;
-    margin: 0;
-  }
-
-  span {
-    font-style: bold;
-    font-size: 23px;
-    line-height: 27px;
-    padding: 0;
-    margin: 0;
-  }
+  @include box($blue);
 }
 
 .box-green {
-  background-color: $green;
-  float: left;
-  color: #FFF;
-  font-size: 13px;
-  line-height: 18px;
+  @include box($green);
   width: 34%;
-  text-align: center;
-  padding: 15px 0;
-  border-bottom-right-radius: 7px;
-
-  p {
-    padding: 0;
-    margin: 0;
-  }
-
-  span {
-    font-style: bold;
-    font-size: 23px;
-    line-height: 27px;
-    padding: 0;
-    margin: 0;
-  }
-
 }
 
 // MIDRIGHT BOTTOM ////////////////////////
@@ -502,6 +460,7 @@
     color: $lightgrey;
     text-align: center;
     font-size: 13px;
+    font-family: "proximanovalight";
   }
 
   .title {
@@ -543,6 +502,8 @@
       font-size: 40px;
       line-height: 48px;
       float: left;
+      font-family: "proximanovaregular";
+      letter-spacing: 0,04em;
     }
 
     img {
@@ -568,6 +529,7 @@
     font-size: 13px;
     padding: 0;
     margin: 0;
+    font-family: "proximanovalight";
   }
 }
 

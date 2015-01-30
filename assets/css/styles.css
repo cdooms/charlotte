@@ -343,9 +343,14 @@ table {
 }
 
 @font-face {
-  font-family: "prox";
-  src: url('../font/proximanovabold.eot');
-  src: url('../font/proximanovabold.eot?#iefix') format('embedded-opentype'), url('../font/proximanovabold.woff') format('woff'), url('../font/proximanovabold.ttf') format('truetype'), url('../font/proximanovabold.otf') format('opentype'), url('../font/proximanovabold.svg') format('svg');
+  font-family: "proximanovaregular";
+  src: url('../font/proximanova-regular.eot?1421238854');
+  src: url('../font/proximanova-regular.eot?&1421238854#iefix') format('embedded-opentype'), url('../font/proximanova-regular.woff?1421238854') format('woff'), url('../font/proximanova-regular.ttf?1421238854') format('truetype'), url('../font/proximanova-regular.otf?1421238854') format('opentype'), url('../font/proximanova-regular.svg?1421238854') format('svg');
+}
+@font-face {
+  font-family: "proximanovalight";
+  src: url('../font/proximanova-light.eot?1421238854');
+  src: url('../font/proximanova-light.eot?&1421238854#iefix') format('embedded-opentype'), url('../font/proximanova-light.woff?1421238854') format('woff'), url('../font/proximanova-light.ttf?1421238854') format('truetype'), url('../font/proximanova-light.otf?1421238854') format('opentype'), url('../font/proximanova-light.svg?1421238854') format('svg');
 }
 *:active,
 *:hover,
@@ -448,6 +453,7 @@ html {
 }
 
 .video {
+  font-family: "proximanovalight";
   background-color: #FFF;
   text-align: center;
   padding: 13% 11%;
@@ -461,6 +467,7 @@ html {
 }
 
 .form {
+  font-family: "proximanovalight";
   background-color: #FFF;
   text-align: center;
   padding: 13% 11%;
@@ -472,6 +479,8 @@ html {
   text-align: left;
 }
 .form label {
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #575757;
   text-align: left;
@@ -486,6 +495,7 @@ html {
   border-radius: 5px;
   padding: 4%;
   line-height: 17px;
+  font-family: "proximanovalight";
   font-size: 13px;
   color: #929292;
   width: 100%;
@@ -498,6 +508,7 @@ html {
   margin: 10px 0;
   border-radius: 5px;
   padding: 4%;
+  font-family: "proximanovalight";
   font-size: 13px;
   line-height: 17px;
   color: #C5C5C5;
@@ -533,12 +544,15 @@ html {
   vertical-align: middle;
 }
 .hugh p {
+  font-family: "proximanovalight";
   color: #929292;
   text-align: left;
   font-size: 13px;
   margin: 0;
 }
 .hugh .title {
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #575757;
   text-align: left;
@@ -566,6 +580,8 @@ html {
   margin: 0;
   vertical-align: middle;
   line-height: 34px;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
 }
 .frame .float {
   float: left;
@@ -576,6 +592,8 @@ html {
   background-color: #dd5555;
   float: left;
   color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
@@ -588,6 +606,8 @@ html {
   background-color: #21b8c6;
   float: left;
   color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
@@ -599,6 +619,8 @@ html {
   background-color: #82ca9c;
   float: left;
   color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
@@ -619,14 +641,19 @@ html {
   color: #929292;
   text-align: center;
   font-size: 13px;
+  font-family: "proximanovalight";
 }
 .uploadstats span {
   color: #575757;
   text-align: center;
   font-weight: regular;
   font-size: 24px;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
 }
 .uploadstats .title {
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #575757;
   text-align: center;
@@ -645,6 +672,8 @@ html {
 }
 
 .title {
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #575757;
   text-align: center;
@@ -655,6 +684,7 @@ html {
 }
 
 .social {
+  font-family: "proximanovalight";
   background-color: #FFF;
   text-align: center;
   padding: 13% 11%;
@@ -663,6 +693,8 @@ html {
   box-shadow: 1px 1px 1px #DEE1E5;
 }
 .social .title {
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #575757;
   text-align: center;
@@ -759,6 +791,7 @@ html {
 }
 
 .signin {
+  font-family: "proximanovalight";
   background-color: #FFF;
   text-align: center;
   padding: 13% 11%;
@@ -769,6 +802,8 @@ html {
   color: #929292;
 }
 .signin label {
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #575757;
   text-align: left;
@@ -788,6 +823,7 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "proximanovaregular";
 }
 .signin .username {
   background: url("../img/layout/username.png") 0 0 no-repeat;
@@ -818,6 +854,7 @@ html {
 .signin a {
   font-size: 13px;
   color: #929292;
+  font-family: "proximanovalight";
 }
 .signin a:hover,
 .signin a:active {
@@ -847,6 +884,7 @@ html {
   margin: 0;
   padding: 5px 0 0;
   line-height: 24px;
+  font-family: "proximanovalight";
 }
 .city .below {
   position: relative;
@@ -873,6 +911,8 @@ html {
   line-height: 30px;
   padding: 0;
   margin: 0;
+  font-family: "proximanovaregular";
+  letter-spacing: 0,04em;
 }
 .location p {
   text-transform: uppercase;
@@ -881,6 +921,7 @@ html {
   line-height: 22px;
   padding: 0;
   margin: 0;
+  font-family: "proximanovalight";
 }
 
 .box-red {
@@ -892,18 +933,19 @@ html {
   width: 33%;
   text-align: center;
   padding: 15px 0;
-  border-bottom-left-radius: 7px;
 }
 .box-red p {
   padding: 0;
   margin: 0;
+  font-family: "proximanovalight";
 }
 .box-red span {
-  font-style: bold;
   font-size: 23px;
   line-height: 27px;
   padding: 0;
   margin: 0;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
 }
 
 .box-blue {
@@ -919,13 +961,15 @@ html {
 .box-blue p {
   padding: 0;
   margin: 0;
+  font-family: "proximanovalight";
 }
 .box-blue span {
-  font-style: bold;
   font-size: 23px;
   line-height: 27px;
   padding: 0;
   margin: 0;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
 }
 
 .box-green {
@@ -934,24 +978,27 @@ html {
   color: #FFF;
   font-size: 13px;
   line-height: 18px;
-  width: 34%;
+  width: 33%;
   text-align: center;
   padding: 15px 0;
-  border-bottom-right-radius: 7px;
+  width: 34%;
 }
 .box-green p {
   padding: 0;
   margin: 0;
+  font-family: "proximanovalight";
 }
 .box-green span {
-  font-style: bold;
   font-size: 23px;
   line-height: 27px;
   padding: 0;
   margin: 0;
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
 }
 
 .getstarted {
+  font-family: "proximanovalight";
   background-color: #FFF;
   text-align: center;
   padding: 13% 11%;
@@ -963,8 +1010,11 @@ html {
   color: #929292;
   text-align: center;
   font-size: 13px;
+  font-family: "proximanovalight";
 }
 .getstarted .title {
+  font-family: "proximanovaregular";
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #575757;
   text-align: center;
@@ -1018,6 +1068,8 @@ html {
   font-size: 40px;
   line-height: 48px;
   float: left;
+  font-family: "proximanovaregular";
+  letter-spacing: 0,04em;
 }
 .temp .frame2 img {
   margin: 0;
@@ -1041,6 +1093,7 @@ html {
   font-size: 13px;
   padding: 0;
   margin: 0;
+  font-family: "proximanovalight";
 }
 
 .w1 {

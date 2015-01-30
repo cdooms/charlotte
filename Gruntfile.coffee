@@ -109,7 +109,7 @@ module.exports = (grunt) ->
         spawn: false
       js:
         files: ["<%= settings.base %><%= settings.theme %>assets/js/*.js"]
-        tasks: ["jshint", "uglify:own"]
+        tasks: ["jshint"]
       scss:
         files: ["<%= settings.base %><%= settings.theme %>assets/scss/**/*.scss"]
         tasks: ["compass:app"]
@@ -119,7 +119,6 @@ module.exports = (grunt) ->
     "compass:app"
     "scsslint"
     "jshint"
-    "uglify:own"
   ]
 
   # DEPLOY

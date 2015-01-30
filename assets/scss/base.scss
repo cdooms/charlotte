@@ -5,7 +5,9 @@
 @include h5bp-helpers;
 
 // fonts
-@include font-face("prox", font-files("proximanovabold.woff", "proximanovabold.ttf", "proximanovabold.otf", "proximanovabold.svg"), "proximanovabold.eot");
+@include font-face("proximanovaregular", font-files("proximanova-regular.woff", "proximanova-regular.ttf", "proximanova-regular.otf", "proximanova-regular.svg"), "proximanova-regular.eot");
+@include font-face("proximanovalight", font-files("proximanova-light.woff", "proximanova-light.ttf", "proximanova-light.otf", "proximanova-light.svg"), "proximanova-light.eot");
+
 // ====================================================================================================== //
 // BASE //
 // ====================================================================================================== //

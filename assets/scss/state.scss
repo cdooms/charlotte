@@ -5,9 +5,9 @@
 // ====================================================================================================== //
 // RESPONSIVENESS //
 // ====================================================================================================== //
-@for $i from 1 through map-get($susy,"columns") {
+@for $i from 1 through map-get($susy, "columns") {
   .w#{$i} {
-    @include span($i of map-get($susy,"columns"));
+    @include span($i of map-get($susy, "columns"));
   }
 }
 

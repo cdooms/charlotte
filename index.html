@@ -48,14 +48,14 @@
  
   <div id="main">
     <div class="col left">
-      <div class="video">
-        <video poster="assets/img/layout/video.png" width="100%" height="264">
+      <div class="video" >
+        <video poster="assets/img/layout/video.png" width="100%" height="264" controls>
           <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm"> 
           <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg"> 
           <source src=h"ttp://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
           <source src="http://techslides.com/demos/sample-videos/small.3gp" type="video/3gp">
         </video>
-        <div class="controls" data-state="hidden">
+        <!--<div class="controls" data-state="hidden">
           <button id="playpause" type="button" data-state="play">P</button>
           <div class="progress">
             <progress id="progress" value="0" min="0">
@@ -63,16 +63,16 @@
             </progress>
           </div>
           <button id="mute" type="button" data-state="mute">M</button>
-        </div>
+        </div>-->
       </div>
 
       <div class="form">
         <form action="" >
-          <h5>Contacts</h5>
+          <label>Contacts</label>
           <input id="GET-name" type="text" name="name">
-          <h5>Subject</h5>
+          <label>Subject</label>
           <input id="GET-name" type="text" name="name" placeholder="Type a subject here">
-          <h5>Message</h5>
+          <label>Message</label>
           <textarea name="message" rows="5">Type your message here</textarea>
           <button>Send mail</button>
         </form>
@@ -85,7 +85,7 @@
           <img class="float" src="assets/img/layout/hugh.png" alt="" />
           
           <div class="test">
-            <h5>Hugh Jackman</h5>
+            <p class="title">Hugh Jackman</p>
             <p>12,354 Followers</p>
           </div>
 
@@ -127,7 +127,7 @@
         <div class="contain">
           
           <div class="uploadstats">
-            <h5>upload stats</h5>
+            <p class="title">upload stats</p>
             <img class="img-box" src="assets/img/layout/stats-circle.png" alt="" />
           </div>
           
@@ -152,7 +152,7 @@
         </div>
 
         <div class="social">
-          <h5>Let's get social</h5>
+          <p class="title">Let's get social</p>
           <ul>
             <li class="sprite-fb"> <a href="index.html" class="sprite-fb" title="facebook"></a></li>
             <li class="sprite-tw"> <a href="index.html" class="sprite-tw" title="twitter"></a></li>
@@ -166,7 +166,7 @@
       <div class="up-right">
         <div class="signin">
           <form action="">
-            <h5>sign in to your account</h5>
+            <label>sign in to your account</label>
             <input id="GET-name" type="text" name="name" placeholder="Username" class="username">
             <input id="GET-name" type="text" name="name" placeholder="Password" class="password">
             <button>Sign in</button>
@@ -201,15 +201,15 @@
     <div class="midright">
       <div class="down-left">
         <div class="getstarted">
-          <img src="assets/img/layout/tick.png" alt="">
-          <h5>Congratulations!</h5>
+          <img class="img-box" src="assets/img/layout/tick.png" alt="">
+          <p class="title">Congratulations!</p>
           <p>Your information was successfully submitted.</p>
           <button>Get Started</button>
         </div>
       </div>
 
       <div class="down-right">
-        <div class="contain weather">
+        <div class="contain">
           <div class="temp">
             <div class="frame2">
               <p>42°</p>

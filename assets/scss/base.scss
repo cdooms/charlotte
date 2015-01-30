@@ -5,7 +5,7 @@
 @include h5bp-helpers;
 
 // fonts
-// +font-face("NAME", font-files("FILE.woff", "FILE.ttf", "FILE.otf", "FILE.svg"), "FILE.eot")
+@include font-face("prox", font-files("proximanovabold.woff", "proximanovabold.ttf", "proximanovabold.otf", "proximanovabold.svg"), "proximanovabold.eot");
 // ====================================================================================================== //
 // BASE //
 // ====================================================================================================== //
@@ -66,6 +66,7 @@ html {
     .up-left {
       @include span(18 at 1 of 42);
     }
+
     .up-right {
       @include span(21 at 22 of 42);
     }
@@ -73,6 +74,7 @@ html {
     .down-left {
       @include span(26 at 1 of 42);
     }
+    
     .down-right {
       @include span(13 at 30 of 42);
     }

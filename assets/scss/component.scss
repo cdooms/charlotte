@@ -8,113 +8,32 @@
   width: 100%;
   overflow: hidden;
   border-radius: 7px;
+  box-shadow: 1px 1px 1px #DEE1E5;
 }
 
 // LEFT ////////////////////////
 
 .video {
-  border-radius: 7px;
-  margin-bottom: $margin-bottom;
+  @include basic();
   margin-top: 50px;
-  width: 100%;
-  height: 264px;
-  position: relative;
-  overflow: hidden;
+  max-height: 264px;
   padding: 0;
-  background-color: #000;
-
-  .controls {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    padding: 10px 0;
-    background-color: rgba(#000, .7);
-    vertical-align: middle;
-    text-align: center;
-
-    button {
-      border: 0;
-      width: 7%;
-      text-indent: -99999px;
-      float: left;
-      margin-left: 15px;
-    }
-
-    .play-pause {
-      background: url(../img/layout/pause.png) 0 0 no-repeat;
-
-    }
-
-    .progress {
-      cursor: pointer;
-      width: 87%;
-      height: 3px;
-      text-align: center;
-    }
-
-    .sound {
-      background: url(../img/layout/sound.png) 0 0 no-repeat;
-    }
-  }
-
-}
-
-#playpause {
-  background: url(../img/layout/pause.png) 0 0 no-repeat;
-  float: left;
-  margin-left: 10px;
-}
-
-#progress {
-  width: 87%;
-  height: 3px;
-  margin-top: 10px;
-  float: left;
-  background-color: #5b5b5b;
-  border: none;
-
-  span {
-  height: 3px;
-  display:inline-block;
-  background-color:#5b5b5b;
-  }
-}
-
-.controls progress::-moz-progress-bar {
-  background-color:#0095dd;
-}
-/* Chrome requires its own rule for this, otherwise it ignores it */
-.controls progress::-webkit-progress-value {
-  background-color:#0095dd;
-}
-
-#mute {
-  background: url(../img/layout/sound.png) 0 0 no-repeat;
-  margin-right: 10px;
+  overflow: hidden;
 }
 
 .form {
-  background-color: #FFF;
-  border-radius: 7px;
-  margin-bottom: $margin-bottom;
+  @include basic();
   margin-top: 50px;
-  padding: 12% 10%;
   color: $lightgrey;
   text-align: left;
 
-  h5 {
-    text-transform: uppercase;
-    color: $darkgrey;
-    font-style: regular;
-    text-align: left;
-    margin: 0;
-    padding: 0 0 9px 0;
+  label {
+    @include label();
   }
 
   input {
-    border: 1px solid #e6e6e6;
-    margin-bottom: 25px;
+    border: 1px solid #E6E6E6;
+    margin: 10px 0 25px;
     border-radius: 5px;
     padding: 4%;
     line-height: 17px;
@@ -125,13 +44,13 @@
   }
 
   textarea {
-    border: 1px solid #e6e6e6;
-    margin-bottom: 20px;
+    border: 1px solid #E6E6E6;
+    margin: 10px 0;
     border-radius: 5px;
     padding: 4%;
     font-size: 13px;
     line-height: 17px;
-    color: #c5c5c5;
+    color: #C5C5C5;
     width: 100%;
     @include box-sizing(border-box);
     resize: none;
@@ -139,17 +58,11 @@
   }
 
   button {
-    clear: both;
-    background-color: $red;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 13px;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    padding: 12px;
-    width: 100%;
-    @include box-sizing(border-box);
+    @include button-red();
+  }
+
+  button:hover {
+    @include button-hover();
   }
 
 }
@@ -169,12 +82,8 @@
     margin: 0;
   }
 
-  h5 {
-    text-transform: uppercase;
-    color: $darkgrey;
-    font-style: regular;
-    text-align: left;
-    margin: 0;
+  .title {
+    @include label();
   }
 
   .float {
@@ -250,7 +159,7 @@
 .uploadstats {
   background-color: #FFF;
   text-align: center;
-  padding: 25px;
+  padding: 13% 11% 0;
   margin-top: 50px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
@@ -268,32 +177,27 @@
     font-size: 24px;
   }
 
+  .title {
+    @include title();
+    }
+
   .img-box {
-    margin: 10px 0 15px 0;
+    margin: 35px 0;
     @include box-sizing(border-box);
     width: 85%;
     min-width: 40%;
   }
 }
 
-h5 {
-  text-transform: uppercase;
-  color: $darkgrey;
-  font-style: regular;
+.title {
+  @include title();
 }
 
 .social {
-  background-color: #FFF;
-  text-align: center;
-  padding: 12% 10%;
-  border-radius: 7px;
-  margin-bottom: $margin-bottom;
+  @include basic();
 
-  h5 {
-    text-transform: uppercase;
-    color: $darkgrey;
-    font-style: regular;
-    margin: 10% 0;
+  .title {
+    @include title();
   }
 
   ul {
@@ -301,7 +205,7 @@ h5 {
     text-align: center;
     display: inline-block;
     @include box-sizing(border-box);
-    margin: 0 auto;
+    margin: 15px 0 0;
   }
   
   li {
@@ -321,96 +225,92 @@ h5 {
   .sprite-fb {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-fb.png) 0 0;
+    background: url("../img/layout/sprite-fb.png") 0 0;
     display: block;
 
   }
 
-  .sprite-fb a:hover, a:active {
+  .sprite-fb a:hover, 
+  a:active {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-fb.png) 0 -33px;
+    background: url("../img/layout/sprite-fb.png") 0 -33px;
     display: block;
   }
 
   .sprite-tw {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-tw.png) 0 0;
+    background: url("../img/layout/sprite-tw.png") 0 0;
     display: block;
   }
 
-  .sprite-tw a:hover, a:active {
+  .sprite-tw a:hover, 
+  a:active {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-tw.png) 0 -33px;
+    background: url("../img/layout/sprite-tw.png") 0 -33px;
     display: block;
   }  
 
   .sprite-in {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-in.png) 0 0;
+    background: url("../img/layout/sprite-in.png") 0 0;
     display: block;
   }
 
-  .sprite-in a:hover, a:active {
+  .sprite-in a:hover, 
+  a:active {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-in.png) 0 -33px;
+    background: url("../img/layout/sprite-in.png") 0 -33px;
     display: block;
   }  
 
   .sprite-go {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-go.png) 0 0;
+    background: url("../img/layout/sprite-go.png") 0 0;
     display: block;
   }
 
-  .sprite-go a:hover, a:active {
+  .sprite-go a:hover, 
+  a:active {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-go.png) 0 -33px;
+    background: url("../img/layout/sprite-go.png") 0 -33px;
     display: block;
   }  
 
   .sprite-pi {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-pi.png) 0 0;
+    background: url("../img/layout/sprite-pi.png") 0 0;
     display: block;
   }
 
-  .sprite-pi a:hover, a:active {
+  .sprite-pi a:hover, 
+  a:active {
     width: 32px;
     height: 32px;
-    background: url(../img/layout/sprite-pi.png) 0 -33px;
+    background: url("../img/layout/sprite-pi.png") 0 -33px;
     display: block;
   }  
 }
 
 .signin {
-  background-color: #FFF;
-  border-radius: 7px;
-  margin-bottom: $margin-bottom;
+  @include basic();
   margin-top: 50px;
-  padding: 15% 12%;
   color: $lightgrey;
-  text-align: center;
 
-  h5 {
-    text-transform: uppercase;
-    color: $darkgrey;
-    font-style: regular;
-    text-align: left;
-    margin: 0;
-    padding: 0 0 17px 0;
+  label {
+    @include label();
   }
 
   input {
-    border: 1px solid #e6e6e6;
-    margin-bottom: 20px;
+    border: 1px solid #E6E6E6;
+    margin: 20px 0 0;
     border-radius: 5px;
     padding: 10px;
     font-size: 13px;
@@ -420,35 +320,34 @@ h5 {
   }
 
   .username {
-    background: url(../img/layout/username.png) 0 0 no-repeat;
+    background: url("../img/layout/username.png") 0 0 no-repeat;
     text-indent: 33px;
     vertical-align: middle;
   }
 
   .password {
-    background: url(../img/layout/password.png) 0 0 no-repeat;
+    background: url("../img/layout/password.png") 0 0 no-repeat;
     text-indent: 33px;
     vertical-align: middle;
   }  
 
   button {
-    clear: both;
-    background-color: $red;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 13px;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    padding: 12px;
-    width: 100%;
-    @include box-sizing(border-box);
-    margin-bottom: 30px;
+    @include button-red();
+    margin-bottom: 25px;
+  }
+
+  button:hover {
+    @include button-hover();
   }
 
   a {
     font-size: 13px;
     color: $lightgrey;
+  }
+
+  a:hover, 
+  a:active {
+    color: $red;
   }
 }
 
@@ -459,7 +358,7 @@ h5 {
   .pin {
     float: left;
     position: absolute;
-    margin: 125px 15px 0px 125px;
+    margin: 125px 15px 0 125px;
     z-index: 3;
     max-height: 24px;
     width: 110px;
@@ -474,7 +373,7 @@ h5 {
       color: #FFF;
       font-size: 15px;
       margin: 0;
-      padding: 5px 0 0 0;
+      padding: 5px 0 0;
       line-height: 24px;
     }
   }
@@ -488,7 +387,7 @@ h5 {
   .above {
     float: left;
     position: absolute;
-    margin: 105px 15px 0px 15px;
+    margin: 105px 15px 0;
     z-index: 2;
   }
 
@@ -597,11 +496,7 @@ h5 {
 // MIDRIGHT BOTTOM ////////////////////////
 
 .getstarted {
-  background-color: #FFF;
-  text-align: center;
-  padding: 13% 11%;
-  border-radius: 7px;
-  margin-bottom: $margin-bottom;
+  @include basic();
 
   p { 
     color: $lightgrey;
@@ -609,30 +504,22 @@ h5 {
     font-size: 13px;
   }
 
-  h5 {
-    text-transform: uppercase;
-    color: $darkgrey;
-    font-style: regular;
-    @include box-sizing(border-box);
+  .title {
+    @include title();
   }
 
   .img-box {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     max-width: 100%;
     @include box-sizing(border-box);
   }
-
+  
   button {
-    background-color: $red;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 13px;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    padding: 12px;
-    margin-top: 20px;
-    width: 100%;
+    @include button-red();
+  }
+
+  button:hover {
+    @include button-hover();
   }
 }
 
@@ -643,17 +530,16 @@ h5 {
   color: #FFF;
   text-align: center;
   padding: 10px;
-  
 
   .frame2 { 
-  margin: 10px 15px;
-  text-align: center;
-  @include box-sizing(border-box);
-  display: inline-block;
+    margin: 10px 15px;
+    text-align: center;
+    @include box-sizing(border-box);
+    display: inline-block;
 
     p {
       padding: 0;
-      margin: 5px 0 0 0;
+      margin: 5px 0 0;
       font-size: 40px;
       line-height: 48px;
       float: left;
@@ -671,7 +557,6 @@ h5 {
   background-color: #FFF;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  margin-bottom: $margin-bottom;
   color: $red;
   text-align: center;
   padding: 15px;

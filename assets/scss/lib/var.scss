@@ -13,7 +13,7 @@ $black-4: rgba($black, .4);
 
 $error: #F00;
 
-$red: #DD5555;
+$red: #D55;
 $green: #82CA9C;
 $blue: #21B8C6;
 $darkgrey: #575757;
@@ -56,13 +56,16 @@ $susy: (
   column-width: 15px,
   gutters: 0,
 
-  debug: (
-    image: show,
-    color: rgba(red, .4),
-    output: background
-  )
+//  debug: (
+//    image: show,
+//    color: rgba(#F00, .4),
+//    output: background
+//  )
 );
 
 // margins
 $margin-bottom: 50px;
+
+
+
 

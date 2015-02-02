@@ -48,6 +48,10 @@ $legacy-support-for-ie8: true !global;
 
 $gutter-width: 20px;
 
+$breakpoint-tab: 480px;
+$breakpoint-desk: 960px;
+
+
 // susy
 $susy: (
   columns: 72,

@@ -15,7 +15,6 @@
 
 .video {
   @include basic();
-  margin-top: 50px;
   max-height: 264px;
   padding: 0;
   overflow: hidden;
@@ -111,57 +110,28 @@
     vertical-align: middle;
     line-height: 34px;
     font-family: "proximanovaregular";
-    letter-spacing: 0.04em;
+    letter-spacing: .04em;
   }
 
   .float {
     float: left;
     margin: 0;
+    width: 34px;
+    height: 34px;
   }
 }
 
 .box-red1 {
-  background-color: $red;
-  float: left;
-  color: #FFF;
-  font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 18px;
-  width: 33%;
-  padding: 15px 0;
-  border-bottom-left-radius: 7px;
-
+  @include box($red);
 }
 
 .box-blue1 {
-  background-color: $blue;
-  float: left;
-  color: #FFF;
-  font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 18px;
-  width: 33%;
-  padding: 15px 0;
-
-
+  @include box($blue);
 }
 
 .box-green1 {
-  background-color: $green;
-  float: left;
-  color: #FFF;
-  font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 18px;
+  @include box($green);
   width: 34%;
-  padding: 15px 0;
-  border-bottom-right-radius: 7px;
 }
 
 
@@ -171,7 +141,6 @@
   background-color: #FFF;
   text-align: center;
   padding: 13% 11% 0;
-  margin-top: 50px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 
@@ -188,7 +157,7 @@
     font-weight: regular;
     font-size: 24px;
     font-family: "proximanovaregular";
-    letter-spacing: 0.04em;
+    letter-spacing: .04em;
   }
 
   .title {
@@ -196,9 +165,9 @@
     }
 
   .img-box {
-    margin: 35px 0;
+    margin: 20% 0;
     @include box-sizing(border-box);
-    width: 85%;
+    max-width: 88%;
     min-width: 40%;
   }
 }
@@ -219,103 +188,72 @@
     text-align: center;
     display: inline-block;
     @include box-sizing(border-box);
-    margin: 15px 0 0;
+    margin: 20px 0 0;
   }
   
   li {
-    list-style: none;
-    margin: 4px;
-    float: left;
-    text-align: center;
-    width: 100%;
+    @include gallery(1 of 5);
   }
 
-  a {
-    width: 32px;
-    height: 32px;
-    text-align: center;
-  }
 
   .sprite-fb {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-fb.png") 0 0;
-    display: block;
-
+    @include sprite();
+    background: url("../img/layout/sprite-fb.png") 0 0 no-repeat;
   }
 
   .sprite-fb a:hover, 
   a:active {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-fb.png") 0 -33px;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-fb.png") 0 -33px no-repeat;
   }
 
   .sprite-tw {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-tw.png") 0 0;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-tw.png") 0 0 no-repeat;
   }
 
   .sprite-tw a:hover, 
   a:active {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-tw.png") 0 -33px;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-tw.png") 0 -33px no-repeat;
   }  
 
   .sprite-in {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-in.png") 0 0;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-in.png") 0 0 no-repeat;
   }
 
   .sprite-in a:hover, 
   a:active {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-in.png") 0 -33px;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-in.png") 0 -33px no-repeat;
   }  
 
   .sprite-go {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-go.png") 0 0;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-go.png") 0 0 no-repeat;
   }
 
   .sprite-go a:hover, 
   a:active {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-go.png") 0 -33px;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-go.png") 0 -33px no-repeat;
   }  
 
   .sprite-pi {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-pi.png") 0 0;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-pi.png") 0 0 no-repeat;
   }
 
   .sprite-pi a:hover, 
   a:active {
-    width: 32px;
-    height: 32px;
-    background: url("../img/layout/sprite-pi.png") 0 -33px;
-    display: block;
+    @include sprite();
+    background: url("../img/layout/sprite-pi.png") 0 -33px no-repeat;
   }  
 }
 
 .signin {
   @include basic();
-  margin-top: 50px;
   color: $lightgrey;
 
   label {
@@ -336,13 +274,13 @@
 
   .username {
     background: url("../img/layout/username.png") 0 0 no-repeat;
-    text-indent: 33px;
+    padding-left: 45px;
     vertical-align: middle;
   }
 
   .password {
     background: url("../img/layout/password.png") 0 0 no-repeat;
-    text-indent: 33px;
+    padding-left: 45px;
     vertical-align: middle;
   }  
 
@@ -368,16 +306,17 @@
 }
 
 .city {
-  max-width: 100%;
-  max-height: 161px;
+  width: 100%;
+  height: 130px;
+  background: url("../img/layout/city.png") 0 0 no-repeat;
 
   .pin {
     float: left;
     position: absolute;
-    margin: 125px 15px 0 125px;
+    margin: 95px 15px 0 125px;
     z-index: 3;
     max-height: 24px;
-    width: 110px;
+    width: 100%;
 
     img {
       float: left;
@@ -395,16 +334,10 @@
     }
   }
 
-  .below {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
-
   .above {
     float: left;
     position: absolute;
-    margin: 105px 15px 0;
+    margin: 95px 15px 0;
     z-index: 2;
   }
 
@@ -414,7 +347,7 @@
   background-color: #FFF;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  padding: 15px 15px 15px 125px;
+  padding: 20px 20px 20px 125px;
 
   span {
     text-transform: uppercase;
@@ -431,7 +364,7 @@
     text-transform: uppercase;
     color: $lightgrey;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 15px;
     padding: 0;
     margin: 0;
     font-family: "proximanovalight";

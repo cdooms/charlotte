@@ -25,10 +25,6 @@ dl {
   padding: 0;
 }
 
-body {
-  background-color: #EAEDF1;
-}
-
 table,
 table td,
 table th {
@@ -49,37 +45,112 @@ body,
 html {
   min-width: 100%;
   min-height: 100%;
+  background-color: #EAEDF1;
+}
+
+body {
+  margin-top: 50px;
 }
 
 #main {
-  max-width: 1200px;
+  max-width: $breakpoint-tab;
   margin: 0 auto;
   height: 100%;
   @include container;
   
   .left {
-    @include span(27 at 1 of 72);
+    //@include span(27 at 1 of 72);
   }
 
   .midright {
-    @include span(42 at 31 of 72);
-    @include last;
+    //@include span(42 at 31 of 72);
+    //@include last;
 
     .up-left {
-      @include span(18 at 1 of 42);
+      //@include span(18 at 1 of 42);
     }
 
     .up-right {
-      @include span(21 at 22 of 42);
+      //@include span(21 at 22 of 42);
     }
 
     .down-left {
-      @include span(26 at 1 of 42);
+      //@include span(26 at 1 of 42);
     }
     
     .down-right {
-      @include span(13 at 30 of 42);
+      //@include span(13 at 30 of 42);
     }
 
   }
+}
+
+@include breakpoint($breakpoint-tab) {
+  #main {
+    max-width: $breakpoint-desk;
+    margin: 0 auto;
+    height: 100%;
+    @include container;
+    
+    .left {
+      @include span(36 at 1 of 72);
+    }
+
+    .midright {
+      @include span(32 at 40 of 72);
+      @include last;
+
+      .up-left {
+        //@include span(34 at 1 of 34);
+      }
+
+      .up-right {
+        //@include span(34 at 1 of 34);
+      }
+
+      .down-left {
+        //@include span(34 at 1 of 34);
+      }
+      
+      .down-right {
+        //@include span(34 at 1 of 34);
+      }
+
+    }
+  }  
+}
+
+@include breakpoint($breakpoint-desk) {
+  #main {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    @include container;
+    
+    .left {
+      @include span(27 at 1 of 72);
+    }
+
+    .midright {
+      @include span(42 at 31 of 72);
+      @include last;
+
+      .up-left {
+        @include span(18 at 1 of 42);
+      }
+
+      .up-right {
+        @include span(21 at 22 of 42);
+      }
+
+      .down-left {
+        @include span(26 at 1 of 42);
+      }
+      
+      .down-right {
+        @include span(13 at 30 of 42);
+      }
+
+    }
+  }  
 }

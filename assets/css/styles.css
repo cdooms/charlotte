@@ -366,10 +366,6 @@ dl {
   padding: 0;
 }
 
-body {
-  background-color: #EAEDF1;
-}
-
 table,
 table td,
 table th {
@@ -389,10 +385,15 @@ body,
 html {
   min-width: 100%;
   min-height: 100%;
+  background-color: #EAEDF1;
+}
+
+body {
+  margin-top: 50px;
 }
 
 #main {
-  max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   height: 100%;
   max-width: 1080px;
@@ -404,45 +405,89 @@ html {
   display: block;
   clear: both;
 }
-#main .left {
-  width: 37.5%;
-  float: left;
-  margin-left: 0;
-  margin-right: -100%;
-}
-#main .midright {
-  width: 58.33333%;
-  float: left;
-  margin-left: 41.66667%;
-  margin-right: -100%;
-  float: right;
-  margin-right: 0;
-}
-#main .midright .up-left {
-  width: 42.85714%;
-  float: left;
-  margin-left: 0;
-  margin-right: -100%;
-}
-#main .midright .up-right {
-  width: 50%;
-  float: left;
-  margin-left: 50%;
-  margin-right: -100%;
-}
-#main .midright .down-left {
-  width: 61.90476%;
-  float: left;
-  margin-left: 0;
-  margin-right: -100%;
-}
-#main .midright .down-right {
-  width: 30.95238%;
-  float: left;
-  margin-left: 69.04762%;
-  margin-right: -100%;
-}
 
+@media (min-width: 480px) {
+  #main {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #main:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  #main .left {
+    width: 50%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+  }
+  #main .midright {
+    width: 44.44444%;
+    float: left;
+    margin-left: 54.16667%;
+    margin-right: -100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 960px) {
+  #main {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #main:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  #main .left {
+    width: 37.5%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+  }
+  #main .midright {
+    width: 58.33333%;
+    float: left;
+    margin-left: 41.66667%;
+    margin-right: -100%;
+    float: right;
+    margin-right: 0;
+  }
+  #main .midright .up-left {
+    width: 42.85714%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+  }
+  #main .midright .up-right {
+    width: 50%;
+    float: left;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+  #main .midright .down-left {
+    width: 61.90476%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+  }
+  #main .midright .down-right {
+    width: 30.95238%;
+    float: left;
+    margin-left: 69.04762%;
+    margin-right: -100%;
+  }
+}
 .contain {
   padding: 0;
   margin-bottom: 50px;
@@ -460,7 +505,6 @@ html {
   border-radius: 7px;
   margin-bottom: 50px;
   box-shadow: 1px 1px 1px #DEE1E5;
-  margin-top: 50px;
   max-height: 264px;
   padding: 0;
   overflow: hidden;
@@ -480,7 +524,7 @@ html {
 }
 .form label {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: #575757;
   text-align: left;
@@ -552,7 +596,7 @@ html {
 }
 .hugh .title {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: #575757;
   text-align: left;
@@ -581,59 +625,116 @@ html {
   vertical-align: middle;
   line-height: 34px;
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
 }
 .frame .float {
   float: left;
   margin: 0;
+  width: 34px;
+  height: 34px;
 }
 
 .box-red1 {
   background-color: #dd5555;
   float: left;
   color: #FFF;
-  font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 13px;
   line-height: 18px;
   width: 33%;
+  text-align: center;
   padding: 15px 0;
-  border-bottom-left-radius: 7px;
+}
+.box-red1 p {
+  padding: 0;
+  margin: 0;
+  font-family: "proximanovalight";
+}
+.box-red1 span {
+  font-size: 23px;
+  line-height: 27px;
+  padding: 0;
+  margin: 0;
+  font-family: "proximanovaregular";
+  letter-spacing: .04em;
+}
+.box-red1 .number {
+  color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: .04em;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 34px;
 }
 
 .box-blue1 {
   background-color: #21b8c6;
   float: left;
   color: #FFF;
-  font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 13px;
   line-height: 18px;
   width: 33%;
+  text-align: center;
   padding: 15px 0;
+}
+.box-blue1 p {
+  padding: 0;
+  margin: 0;
+  font-family: "proximanovalight";
+}
+.box-blue1 span {
+  font-size: 23px;
+  line-height: 27px;
+  padding: 0;
+  margin: 0;
+  font-family: "proximanovaregular";
+  letter-spacing: .04em;
+}
+.box-blue1 .number {
+  color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: .04em;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 34px;
 }
 
 .box-green1 {
   background-color: #82ca9c;
   float: left;
   color: #FFF;
+  font-size: 13px;
+  line-height: 18px;
+  width: 33%;
+  text-align: center;
+  padding: 15px 0;
+  width: 34%;
+}
+.box-green1 p {
+  padding: 0;
+  margin: 0;
+  font-family: "proximanovalight";
+}
+.box-green1 span {
+  font-size: 23px;
+  line-height: 27px;
+  padding: 0;
+  margin: 0;
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
+}
+.box-green1 .number {
+  color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: .04em;
   font-size: 15px;
   font-weight: bold;
-  line-height: 18px;
-  width: 34%;
-  padding: 15px 0;
-  border-bottom-right-radius: 7px;
+  line-height: 34px;
 }
 
 .uploadstats {
   background-color: #FFF;
   text-align: center;
   padding: 13% 11% 0;
-  margin-top: 50px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
@@ -649,11 +750,11 @@ html {
   font-weight: regular;
   font-size: 24px;
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
 }
 .uploadstats .title {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: #575757;
   text-align: center;
@@ -663,17 +764,17 @@ html {
   font-weight: bold;
 }
 .uploadstats .img-box {
-  margin: 35px 0;
+  margin: 20% 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 85%;
+  max-width: 88%;
   min-width: 40%;
 }
 
 .title {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: #575757;
   text-align: center;
@@ -694,7 +795,7 @@ html {
 }
 .social .title {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: #575757;
   text-align: center;
@@ -710,84 +811,112 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 15px 0 0;
+  margin: 20px 0 0;
 }
 .social li {
-  list-style: none;
-  margin: 4px;
+  width: 20%;
   float: left;
-  text-align: center;
-  width: 100%;
 }
-.social a {
-  width: 32px;
-  height: 32px;
-  text-align: center;
+.social li:nth-child(5n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+.social li:nth-child(5n + 2) {
+  margin-left: 20%;
+  margin-right: -100%;
+  clear: none;
+}
+.social li:nth-child(5n + 3) {
+  margin-left: 40%;
+  margin-right: -100%;
+  clear: none;
+}
+.social li:nth-child(5n + 4) {
+  margin-left: 60%;
+  margin-right: -100%;
+  clear: none;
+}
+.social li:nth-child(5n + 5) {
+  margin-left: 80%;
+  margin-right: -100%;
+  clear: none;
 }
 .social .sprite-fb {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-fb.png") 0 0;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-fb.png") 0 0 no-repeat;
 }
 .social .sprite-fb a:hover,
 .social a:active {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-fb.png") 0 -33px;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-fb.png") 0 -33px no-repeat;
 }
 .social .sprite-tw {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-tw.png") 0 0;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-tw.png") 0 0 no-repeat;
 }
 .social .sprite-tw a:hover,
 .social a:active {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-tw.png") 0 -33px;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-tw.png") 0 -33px no-repeat;
 }
 .social .sprite-in {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-in.png") 0 0;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-in.png") 0 0 no-repeat;
 }
 .social .sprite-in a:hover,
 .social a:active {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-in.png") 0 -33px;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-in.png") 0 -33px no-repeat;
 }
 .social .sprite-go {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-go.png") 0 0;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-go.png") 0 0 no-repeat;
 }
 .social .sprite-go a:hover,
 .social a:active {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-go.png") 0 -33px;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-go.png") 0 -33px no-repeat;
 }
 .social .sprite-pi {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-pi.png") 0 0;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-pi.png") 0 0 no-repeat;
 }
 .social .sprite-pi a:hover,
 .social a:active {
-  width: 32px;
+  width: 42px;
   height: 32px;
-  background: url("../img/layout/sprite-pi.png") 0 -33px;
   display: block;
+  text-align: center;
+  background: url("../img/layout/sprite-pi.png") 0 -33px no-repeat;
 }
 
 .signin {
@@ -798,12 +927,11 @@ html {
   border-radius: 7px;
   margin-bottom: 50px;
   box-shadow: 1px 1px 1px #DEE1E5;
-  margin-top: 50px;
   color: #929292;
 }
 .signin label {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: #575757;
   text-align: left;
@@ -827,12 +955,12 @@ html {
 }
 .signin .username {
   background: url("../img/layout/username.png") 0 0 no-repeat;
-  text-indent: 33px;
+  padding-left: 45px;
   vertical-align: middle;
 }
 .signin .password {
   background: url("../img/layout/password.png") 0 0 no-repeat;
-  text-indent: 33px;
+  padding-left: 45px;
   vertical-align: middle;
 }
 .signin button {
@@ -862,16 +990,17 @@ html {
 }
 
 .city {
-  max-width: 100%;
-  max-height: 161px;
+  width: 100%;
+  height: 130px;
+  background: url("../img/layout/city.png") 0 0 no-repeat;
 }
 .city .pin {
   float: left;
   position: absolute;
-  margin: 125px 15px 0 125px;
+  margin: 95px 15px 0 125px;
   z-index: 3;
   max-height: 24px;
-  width: 110px;
+  width: 100%;
 }
 .city .pin img {
   float: left;
@@ -886,15 +1015,10 @@ html {
   line-height: 24px;
   font-family: "proximanovalight";
 }
-.city .below {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
 .city .above {
   float: left;
   position: absolute;
-  margin: 105px 15px 0;
+  margin: 95px 15px 0;
   z-index: 2;
 }
 
@@ -902,7 +1026,7 @@ html {
   background-color: #FFF;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  padding: 15px 15px 15px 125px;
+  padding: 20px 20px 20px 125px;
 }
 .location span {
   text-transform: uppercase;
@@ -918,7 +1042,7 @@ html {
   text-transform: uppercase;
   color: #929292;
   font-size: 13px;
-  line-height: 22px;
+  line-height: 15px;
   padding: 0;
   margin: 0;
   font-family: "proximanovalight";
@@ -945,7 +1069,15 @@ html {
   padding: 0;
   margin: 0;
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
+}
+.box-red .number {
+  color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: .04em;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 34px;
 }
 
 .box-blue {
@@ -969,7 +1101,15 @@ html {
   padding: 0;
   margin: 0;
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
+}
+.box-blue .number {
+  color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: .04em;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 34px;
 }
 
 .box-green {
@@ -994,7 +1134,15 @@ html {
   padding: 0;
   margin: 0;
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
+}
+.box-green .number {
+  color: #FFF;
+  font-family: "proximanovaregular";
+  letter-spacing: .04em;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 34px;
 }
 
 .getstarted {
@@ -1014,7 +1162,7 @@ html {
 }
 .getstarted .title {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: #575757;
   text-align: center;

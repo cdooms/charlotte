@@ -255,7 +255,7 @@
 
 @mixin label {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: $darkgrey;
   text-align: left;
@@ -267,7 +267,7 @@
 
 @mixin title {
   font-family: "proximanovaregular";
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: $darkgrey;
   text-align: center;
@@ -299,6 +299,24 @@
     padding: 0;
     margin: 0;
     font-family: "proximanovaregular";
-    letter-spacing: 0.04em;
+    letter-spacing: .04em;
+  }
+
+  .number {
+    color: #FFF;
+    font-family: "proximanovaregular";
+    letter-spacing: .04em;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 34px;
   }
 }
+
+@mixin sprite {
+  width: 42px;
+  height: 32px;
+  display: block;
+  text-align: center;
+}
+
+
